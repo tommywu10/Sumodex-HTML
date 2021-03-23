@@ -35,9 +35,14 @@ header h1 {
 #artist-credit {
 	text-align: right;
 	margin: 10px;
-	letter-spacing: 1px;
+	letter-spacing: .4px;
 	color: white;
 	font-size: 12px;
+}
+
+#artist-credit a {
+	color: white;
+	letter-spacing: 0;
 }
 
 #main-heading, #main-heading-jp {
@@ -416,6 +421,10 @@ tr:nth-child(even) {
 	margin: 20px auto;
 }
 
+.sumo-history-container p {
+	margin: 10px 0;
+}
+
 #gyoji-img {
 	height: 200px;
 	width: 80%;
@@ -441,18 +450,22 @@ tr:nth-child(even) {
 	margin: 0 0 15px;
 }
 
+.sumo-history-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 20px 0;
+}
+
 
 
 
 /*---------------------LEARN MORE-------------------------------*/
 
 .learn-more-container {
-	background:#2746f5;
+	background-color:#1538fd;
 	color: white;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 }
 
 #learn-more-yt-playlist {
@@ -517,6 +530,17 @@ footer img {
 		width: 60%;
 		height: 300px;
 	}
+
+	.yt-channel-container {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.yt-channel-item {
+		height: 450px;
+		display: flex;
+		justify-content: space-between;
+	}
 }
 
 
@@ -566,6 +590,7 @@ footer img {
 	#recent-tournaments-table {
 		font-size: 1em;
 	}
+	
 
 	.sumo-ruleset-body {
 		display: flex;
@@ -581,20 +606,31 @@ footer img {
 		width: 90%;
 	}
 
-	.prematch-ritual-container {
+	.sumo-history-body {
 		display: flex;
-		justify-content: space-evenly;
-		align-items: center;
+		flex-direction: column;
 	}
 
-	.prematch-ritual-text {
-		width: 60%;
+	.sumo-history-main {
+		display: flex;
+	}
+
+	.sumo-history-text {
+		width: 50%;
+		margin-left: 30px;
 	}
 
 	#sumo-history-img {
-		width: 35%;
-		margin: 20px 30px;
-		float: left;
+		width: 60%;
+	}
+
+	.prematch-ritual-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 50%;
+		margin: 0 auto;
 	}
 
 	#gyoji-img {
@@ -605,12 +641,14 @@ footer img {
 	.yt-channel-container {
 		flex-direction: row;
 		justify-content: space-evenly;
+		
 	}
 	
 	.yt-channel-item {
 		background: none;
 		width: 20%;
 		box-shadow: none;
+		height: 250px;
 	}
 
 	.yt-channel-item h4 {
@@ -680,4 +718,14 @@ footer img {
 		box-shadow:0 1px 8px rgba(0,0,0,0.5);
 	}
 
+	.learn-more-container {
+		display: flex;
+		align-items: center;
+		width: 100%;
+	}
+	
+	.learn-more-content, .learn-more-video {
+		width: 50%;
+		padding: 50px;
+	}
 }
